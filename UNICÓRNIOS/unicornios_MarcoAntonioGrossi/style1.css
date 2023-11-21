@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+}
+
+#cabecalho {
+    background: #6175f0;
+    color: white;
+    padding-left: 34px;
+    margin: 0;
+}
+
+#titulo{
+    font-size: 36px;
+    font-family: cursive;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#subtitulo{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 13px;
+    color: white;
+}
+
+h2{
+    color: black;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+#imagem-principal{
+    float: left;
+    padding-right: 13px;
+}
+
+#hoje{
+    float: right;
+    border: 1px solid #ff56fb;
+    background-color: #f8cef7;
+    padding: 20px 35px 30px 35px;
+    width: 335px;
+    text-align: center;
+    margin: 25px;
+}
+
+#hoje > img{
+    width: 112px;
+    height: 112px;
+}
+
+#musica{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 12px;
+    width: 405px;
+}
+
+#hoje, #musica{
+    clear: left;
+}
+
+#musica > p:nth-of-type(2n){
+    padding-left: 34px;
+}
+
+#referencia{
+    font-style: italic;
+}

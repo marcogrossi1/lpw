@@ -1,0 +1,114 @@
+#controles ul {
+  list-style-type: none;
+  padding: 0;
+  transform: translateX(-80%);
+}
+
+#controles ul:hover {
+  transform: translateX(0);
+}
+
+
+ #controles ul {
+  transition: 500ms linear;  
+}
+
+.com-fome {
+  animation: fome .5s 0s infinite alternate;
+}
+
+@keyframes fome {
+  from {opacity: 1;}
+  to {opacity: 0.5;}
+}
+
+#comando{
+  perspective: 400px;
+}
+
+.satisfeito {
+  transform-style: flat;
+
+  animation: 
+    satisfeito .2s 0s 5 alternate,
+}
+
+@keyframes rotacionando{
+  from{
+    transform: rotateX(0turn);
+  }
+
+  to{
+    transform: rotateY(1turn)
+  }
+}
+
+@keyframes satisfeito{
+  from{
+    border: 5px solid greenyellow;
+    transform: rotate(20deg);
+  }
+
+  to{
+    border: 5px solid green;
+    transform: rotate(-20deg);
+  }
+}
+
+.com-raiva {
+  
+  animation: raiva .2s 0s 5 alternate;
+}
+
+/*
+Olá, professor como vai? Essa escolha para os animais com raiva foi plenamente artística!
+Queria que o animal com raiva fosse mais minimalista, tal qual o animal feliz. Segue, ao 
+final do código, o possível código, comentado, para o animal com raiva.
+*/
+
+@keyframes raiva {
+  from{
+    border: 5px solid rgb(245, 83, 83);
+    transform: rotate(20deg);
+  }
+
+  to {
+    border: 5px solid red;
+    transform: rotate(-20deg);
+  }
+}
+
+/*
+DESAFIO 1
+Adicionando duas animações para o ataque!
+*/
+
+.atacando {
+  transform: translateY(-30%);
+  animation: atacando .4s 0s 1 alternate,
+             colorindo .1s 0s infinite alternate-reverse;
+}
+
+@keyframes atacando {
+  from{
+    width: 250px;
+    height: 250px;
+  }
+
+  to{
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@keyframes colorindo {
+  from{
+    border: 5px solid rgb(255, 255, 255);
+    transform: rotate(20deg);
+  }
+
+  to {
+    border: 5px solid red;
+    transform: rotate(-20deg);
+  }
+}
